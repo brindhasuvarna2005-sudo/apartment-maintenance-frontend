@@ -1,16 +1,40 @@
-# React + Vite
+# Apartment Maintenance & Complaint Management System — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React frontend for the Apartment Maintenance & Complaint Management System, built as the capstone project for the Capgemini FUEL Full-Stack Java Development Program. This repository contains the client-side application; the Spring Boot REST API backend lives in a separate repository: [apartment-maintenance-and-complaint-management-system](https://github.com/brindhasuvarna2005-sudo/apartment-maintenance-and-complaint-management-system).
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A role-based UI for residents to raise maintenance complaints and for staff to manage them through a fixed status lifecycle (`OPEN → IN_PROGRESS → RESOLVED → CLOSED`), consuming the backend's REST API.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React.js**
+- **HTML / CSS**
+- REST API integration with the Spring Boot backend
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js and npm
+- The [backend](https://github.com/brindhasuvarna2005-sudo/apartment-maintenance-and-complaint-management-system) running locally (this app expects it at `http://localhost:8080` by default)
+
+### Setup
+1. Clone the repo:
+```bash
+   git clone https://github.com/brindhasuvarna2005-sudo/apartment-maintenance-frontend.git
+```
+2. Install dependencies:
+```bash
+   npm install
+```
+3. Run the development server:
+```bash
+   npm start
+```
+4. The app will be available at `http://localhost:3000`.
+
+> **Note:** Make sure the backend is running first — this app calls its API directly and won't function correctly without it.
+
+## Author
+
+Brindha Suvarna — [GitHub](https://github.com/brindhasuvarna2005-sudo)
